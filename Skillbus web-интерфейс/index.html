@@ -32,25 +32,28 @@
         <use xlink:href="images/sprites.svg#logo"></use>
       </svg>
       <form class="header__search">
-        <input class="header__search-input input-validate" type="search" maxlength="20" required placeholder="Введите запрос" aria-label="поиск по клиента">
+        <input class="header__search-input input-validate" list="students-list" maxlength="60" required placeholder="Введите запрос" aria-label="поиск по клиента">
+        <datalist id="students-list">
+        </datalist>
       </form>
     </div>
   </header>
 
   <section class="clients">
     <div class="container clients__container">
-      <h1 class="clients__heading">Клиенты</h1>
-      <div class="clients__table-container"></div>
+      <div class="container-scrol">
+        <h1 class="clients__heading">Клиенты</h1>
+        <div class="clients__table-container"></div>
+      </div>
       <div class="clients__btn-container">
         <button class="clients__btn" data-graph-path="first" data-graph-animation="fadeInUp" data-graph-speed="500">
           <svg class="clients__btn-icon" width="22" height="16" viewbox="0 0 23 16" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="images/sprites.svg#addClient"></use>
-          </svg>Добавить клиента</button>
+          </svg>Добавить клиента
+        </button>
       </div>
     </div>
-
-
   </section>
 
   <div class="modal">
@@ -59,7 +62,7 @@
       <button class="modal__close" aria-label="Закрыть модальное окно"></button>
       <div class="modal-content">
         <div class="modal__inner">
-          <h3 class="modal__heading-edit">Новый клиент</h3>
+          <h3 class="modal__heading">Новый клиент</h3>
 
           <form class="modal__form">
             <input class="modal__form-input surname input-validate" minlength="1" maxlength="20" required type="text" id="surname"
@@ -100,7 +103,7 @@
       <button class="modal__close" aria-label="Закрыть модальное окно"></button>
       <div class="modal-content">
         <div class="modal__inner">
-          <h3 class="modal__heading-edit">Изменить данные</h3>
+          <h3 class="modal__heading">Изменить данные</h3>
           <span class="modal__heading-edit-id">ID: 123458</span>
 
           <form class="modal__form">
@@ -153,7 +156,35 @@
         </div>
       </div>
     </div>
+
+    <div class="modal__container modal__container-card" role="dialog" aria-modal="true" data-graph-target="four">
+      <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+      <div class="modal-content">
+        <div class="modal__inner">
+          <h3 class="modal__heading">Данные клиента</h3>
+          <span class="modal__heading-card-id">ID: 123458</span>
+
+          <form class="modal__form">
+
+            <input class="modal__form-input surname-card" readonly type="text" id="surname-card"
+              aria-label="введите вашу фамилию">
+            <label class="modal__form-label-surname" for="surname-card">Фамилия</label>
+
+            <input class="modal__form-input name-card" readonly type="text" id="name-card" aria-label="введите ваше имя">
+            <label class="modal__form-label-name" for="name-card">Имя</label>
+
+            <input class="modal__form-input lastname-card mb-25" readonly type="text" id="lastname-card"
+              aria-label="введите ваше отчество">
+              <label class="modal__form-label-lastname" for="lastname-card">Отчество</label>
+
+            <div class="modal__contacts-main-container-card"></div>
+
+            <div class="modal__form-btn-container-card mb-25"></div>
+
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
-
 </html>
