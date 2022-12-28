@@ -32,7 +32,8 @@
         <use xlink:href="images/sprites.svg#logo"></use>
       </svg>
       <form class="header__search">
-        <input class="header__search-input input-validate" list="students-list" maxlength="60" required placeholder="Введите запрос" aria-label="поиск по клиента">
+        <input class="header__search-input input-validate" list="students-list" maxlength="60" required
+          placeholder="Введите запрос" aria-label="поиск по клиента">
         <datalist id="students-list">
         </datalist>
       </form>
@@ -61,19 +62,20 @@
     <div class="modal__container modal__container-add" role="dialog" aria-modal="true" data-graph-target="first">
       <button class="modal__close" aria-label="Закрыть модальное окно"></button>
       <div class="modal-content">
-        <div class="modal__inner">
+        <div class="modal__inner modal__inner-new">
           <h3 class="modal__heading">Новый клиент</h3>
 
           <form class="modal__form">
-            <input class="modal__form-input surname input-validate" minlength="1" maxlength="20" required type="text" id="surname"
-            aria-label="введите вашу фамилию" >
+            <input class="modal__form-input surname input-validate" minlength="1" maxlength="20" required type="text"
+              id="surname" aria-label="введите вашу фамилию">
             <label class="modal__form-label-surname" for="surname">Фамилия</label>
 
-            <input class="modal__form-input name input-validate"  minlength="1" maxlength="20" required  type="text" id="name" aria-label="введите ваше имя">
+            <input class="modal__form-input name input-validate" minlength="1" maxlength="20" required type="text"
+              id="name" aria-label="введите ваше имя">
             <label class="modal__form-label-name" for="name">Имя</label>
 
-            <input class="modal__form-input lastname mb-25 input-validate"  minlength="1" maxlength="20" required  type="text" id="lastname"
-            aria-label="введите ваше отчество">
+            <input class="modal__form-input lastname mb-25 input-validate" minlength="1" maxlength="20" required
+              type="text" id="lastname" aria-label="введите ваше отчество">
             <label class="modal__form-label-lastname" for="lastname">Отчество</label>
 
             <div class="modal__contacts-main-container"></div>
@@ -84,8 +86,10 @@
               </button>
             </div>
             <ul class="error-container">
-              <li class="error-surname modal__form-validation-text">Введите фамилию русскими буквами длиной от 2 до 20 букв</li>
-              <li class="error-name modal__form-validation-text">Введите имя русскими буквами длиной от 2 до 20 букв</li>
+              <li class="error-surname modal__form-validation-text">Введите фамилию русскими буквами длиной от 2 до 20
+                букв</li>
+              <li class="error-name modal__form-validation-text">Введите имя русскими буквами длиной от 2 до 20 букв
+              </li>
               <li class="error-phone modal__form-validation-text">Введите корректный номер телефона</li>
               <li class="error-email modal__form-validation-text">Введите корректный Email</li>
               <li class="error-empty modal__form-validation-text">Данные контактов пусты</li>
@@ -102,22 +106,23 @@
     <div class="modal__container modal__container-edit" role="dialog" aria-modal="true" data-graph-target="two">
       <button class="modal__close" aria-label="Закрыть модальное окно"></button>
       <div class="modal-content">
-        <div class="modal__inner">
+        <div class="modal__inner modal__inner-edit">
           <h3 class="modal__heading">Изменить данные</h3>
           <span class="modal__heading-edit-id">ID: 123458</span>
 
-          <form class="modal__form">
+          <form class="modal__form modal__form-edit">
 
-            <input class="modal__form-input surname-edit input-validate" minlength="1" maxlength="20" required  type="text" id="surname-edit"
-              aria-label="введите вашу фамилию">
-              <label class="modal__form-label-surname" for="surname-edit">Фамилия</label>
+            <input class="modal__form-input surname-edit input-validate" minlength="1" maxlength="20" required
+              type="text" id="surname-edit" aria-label="введите вашу фамилию">
+            <label class="modal__form-label-surname" for="surname-edit">Фамилия</label>
 
-            <input class="modal__form-input name-edit input-validate" minlength="1" maxlength="20" required  type="text" id="name-edit" aria-label="введите ваше имя">
+            <input class="modal__form-input name-edit input-validate" minlength="1" maxlength="20" required type="text"
+              id="name-edit" aria-label="введите ваше имя">
             <label class="modal__form-label-name" for="name-edit">Имя</label>
 
-            <input class="modal__form-input lastname-edit mb-25 input-validate" minlength="1" maxlength="20" required  type="text" id="lastname-edit"
-              aria-label="введите ваше отчество">
-              <label class="modal__form-label-lastname" for="lastname-edit">Отчество</label>
+            <input class="modal__form-input lastname-edit mb-25 input-validate" minlength="1" maxlength="20" required
+              type="text" id="lastname-edit" aria-label="введите ваше отчество">
+            <label class="modal__form-label-lastname" for="lastname-edit">Отчество</label>
 
             <div class="modal__contacts-main-container-edit"></div>
 
@@ -127,16 +132,18 @@
               </button>
             </div>
             <ul class="error-container error-container-edit">
-              <li class="error-surname-edit modal__form-validation-text">Введите фамилию русскими буквами длиной от 2 до 20 букв</li>
-              <li class="error-name-edit modal__form-validation-text">Введите имя русскими буквами длиной от 2 до 20 букв</li>
+              <li class="error-surname-edit modal__form-validation-text">Введите фамилию русскими буквами длиной от 2 до
+                20 букв</li>
+              <li class="error-name-edit modal__form-validation-text">Введите имя русскими буквами длиной от 2 до 20
+                букв</li>
               <li class="error-phone-edit modal__form-validation-text">Введите корректный номер телефона</li>
               <li class="error-email-edit modal__form-validation-text">Введите корректный Email</li>
               <li class="error-empty-edit modal__form-validation-text">Данные контактов пусты</li>
             </ul>
             <div class="modal__form-btn-container">
               <button class="modal__form-btn modal__form-btn-edit">Сохранить</button>
-              <button class="modal__form-btn-delete modal__form-btn-edit-delete" data-graph-path="third" data-graph-animation="fadeInUp"
-              data-graph-speed="500">Удалить клиента</button>
+              <button class="modal__form-btn-delete modal__form-btn-edit-delete" data-graph-path="third"
+                data-graph-animation="fadeInUp" data-graph-speed="500">Удалить клиента</button>
             </div>
           </form>
         </div>
@@ -170,12 +177,13 @@
               aria-label="введите вашу фамилию">
             <label class="modal__form-label-surname" for="surname-card">Фамилия</label>
 
-            <input class="modal__form-input name-card" readonly type="text" id="name-card" aria-label="введите ваше имя">
+            <input class="modal__form-input name-card" readonly type="text" id="name-card"
+              aria-label="введите ваше имя">
             <label class="modal__form-label-name" for="name-card">Имя</label>
 
             <input class="modal__form-input lastname-card mb-25" readonly type="text" id="lastname-card"
               aria-label="введите ваше отчество">
-              <label class="modal__form-label-lastname" for="lastname-card">Отчество</label>
+            <label class="modal__form-label-lastname" for="lastname-card">Отчество</label>
 
             <div class="modal__contacts-main-container-card"></div>
 
@@ -187,4 +195,5 @@
     </div>
   </div>
 </body>
+
 </html>
